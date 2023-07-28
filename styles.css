@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+/* Rest of the CSS styles */
+
+/* Rest of the CSS styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    display: flex;
+    align-items: center; /* Align the logo and navigation items vertically */
+  }
+  
+  /* Adjust the logo size and margin as per your requirements */
+  header img {
+    flex: 1; /* Take up all available space horizontally */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Set a maximum height for the logo */
+    margin-right: 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Rest of the CSS styles */
+  
+  
+  
+  main {
+    padding: 20px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature img {
+    max-width: 100%;
+  }
+  
+  #contact {
+    background-color: #f4f4f4;
+    padding: 40px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  input,
+  textarea,
+  button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Rest of the CSS styles */
+/* Rest of the CSS styles */
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none; /* Hide the hamburger on larger screens */
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    /* Show the hamburger on smaller screens */
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+    .hamburger-menu .bar {
+      transition: 0.4s;
+    }
+  
+    .hamburger-menu.show .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .hamburger-menu.show .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger-menu.show .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    /* Hide the regular navigation on smaller screens */
+    nav ul {
+      display: none;
+    }
+  
+    /* Show the navigation as a dropdown menu */
+    nav ul.show {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust the height and width of the dropdown menu */
+    nav li a {
+      padding: 5px;
+      background-color: #333;
+    }
+  }
+  
